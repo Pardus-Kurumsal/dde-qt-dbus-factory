@@ -1,0 +1,27 @@
+  <interface name="com.deepin.daemon.Mime">
+    <method name="AddUserApp">
+      <arg type="as" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="DeleteUserApp">
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="GetDefaultApp">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="ListApps">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="ListUserApps">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="Reset"/>
+    <method name="SetDefaultApp">
+      <arg type="as" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <signal name="Change"/>
+  </interface>
